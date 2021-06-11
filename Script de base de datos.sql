@@ -1,4 +1,4 @@
-create database TuRicardoPrueba
+create database RicardoPrueba
 go
 use RicardoPrueba
 go
