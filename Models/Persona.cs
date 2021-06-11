@@ -19,7 +19,7 @@ namespace Prueba_Banreservas.Models
         public int ID { get; set; }
         [Required(ErrorMessage = "Debe ingresar un nombre")]
         [MaxLength(100, ErrorMessage = "El campo no puede tener más de 100 caracteres")]
-        [RegularExpression("^[A-Za-z0-9_-]*$", ErrorMessage = "El nombre no puede contener caracteres especiales")]
+        [RegularExpression("^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$", ErrorMessage = "El nombre no puede contener caracteres especiales")]
         public string Nombre { get; set; }
 
         [Required(ErrorMessage = "Debe ingresar una fecha válida")]
